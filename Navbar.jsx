@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "../img/Search.png";
 import Cart from "../img/Cart.jpg";
+import {Link } from "react-router-dom";
 // import Poster from './Poster'
 
 function Navbar() {
@@ -10,15 +11,16 @@ function Navbar() {
   };
   let my_search = document.querySelector(".search");
   const search = () => {
-    my_search.classList.toggle("active");
+    my_seLinkrch.classList.toggle("active");
   };
   return (
     <>
       <nav className="navbar">
         <div>
-          <a href="/Data.jsx">About us</a>
-          <a href="">Categories</a>
-          <a href="">Filter</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About us</Link>
+          <Link to="/categories">Categories</Link>
+          <Link to="/filter">Filter</Link>
         </div>
         <h1>R</h1>
         <h2>SHOP</h2>

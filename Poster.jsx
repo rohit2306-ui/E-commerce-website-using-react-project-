@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Data from "./Data";
 import Brand from "./Brand";
+import Catlog from "./Catlog";
 
 export class Poster extends Component {
   render() {
@@ -16,9 +17,8 @@ export class Poster extends Component {
           <h1 className="enjoy">Enjoy the Trend</h1>
           <button className="but">Shop gifts</button>
         </div>
-        {/* <Data/> */}
         <Brand/>
-        <Data/>
+        <Catlog/>
         </div>
         
       </>

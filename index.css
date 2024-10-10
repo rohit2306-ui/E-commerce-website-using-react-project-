@@ -22,7 +22,7 @@
   }
   h1{
     margin-top: 15px;
-    margin-left: 20%;
+    margin-left: 15%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     &:hover{
@@ -181,7 +181,7 @@
   .brand-data{
     height: auto;
     width: 100%;
-    background-color: rgb(216, 210, 210);
+    background-color: rgb(35, 44, 78);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,10 +192,13 @@
   width: 270px;
   background-color: white;
   margin: 20px 20px;
+  box-shadow: 5px 5px 10px 2px rgb(137, 88, 119);
+  border-radius: 10px;
   .brand-logo{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    border: 1px solid black;
     /* background-color: red; */
     background-image: url(poster.jpeg);
     background-size: cover;
@@ -239,6 +242,7 @@
   h1{
     font-size: 23px;
     margin-top: 20px;
+    color: orange;
   }
   h2{
     font-size: 13px;
@@ -250,15 +254,18 @@
     h1{
       font-size: 17px;
       margin-left: 10px;
+      color: black;
     }
     h2{
       font-size: 30px;
       margin-left: 50px;
       font-weight: 700;
+      color: rgb(151, 48, 48);
     }
     h3{
       font-size: 30px;
       margin-top: 10px;
+      color: rgb(47, 76, 43);
     }
     button{
       height: 50px;
@@ -293,4 +300,668 @@
     margin-left: 5px;
   }
  }
+}
+.catlog-data{
+  height: auto;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-items: stretch;
+  /* border: 1px solid black; */
+  /* margin-bottom: 50px; */
+  background-color: rgba(119, 152, 231, 0.767);
+  padding-top: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-bottom: 50px;
+}
+.Wel{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pos-d{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 11px;
+  flex-direction: row;
+  height: 170px;
+  width: 300px;
+  overflow: hidden;
+  border: 0.5px solid black;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 8px 1px black;
+  img{
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px;
+    object-fit: contain;
+  }
+  .data-catlog-imge{
+      height: 100%;
+      width: 70%;
+      border-radius: 20px;
+      background-color: rgb(225, 221, 221);
+      flex-wrap: nowrap;
+      cursor: pointer;
+      box-shadow: -5px 5px 10px 2px rgb(77, 58, 58);
+      
+      h3{
+        font-size: 11px;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2{
+        font-size: 20px;
+        margin: 30px 50px;
+        color: rgb(94, 19, 19);
+      }
+  }
+}
+.rotate-divs{
+  height: auto;
+  width: auto;
+  display: flex;
+  position: relative;
+  background-color: rgba(58, 79, 123, 0.854);
+  filter: drop-shadow(7px 5px 7px solid white);
+
+}
+.parts-brand{
+  height: 300px;
+  width: 400px;
+  /* background-color: red; */
+  background-color: rgba(153, 175, 179, 0.477);
+  margin: 20px 20px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 5px 5px 20px 2px rgb(37, 36, 36);
+  h1{
+    text-align: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+}
+.data-choose{
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+}
+.chose-data-of-data{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  h1{
+    cursor: pointer;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 10px 0px rgb(122, 186, 213);
+    
+  }
+}
+.footer{
+  height: auto;
+  background-color: rgb(19, 19, 41);
+  display: flex;
+  flex-wrap:  wrap;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  .about{
+    height: 350px;
+    width: 30%;
+    /* background-color: red; */
+    margin: 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h1{
+      color: white;
+    }
+    .email-send{
+      margin-left: 5%;
+      display: flex;
+      height: 50px;
+      width: 85%;
+      background-color: white;
+      border-radius: 40px;
+      input{
+        border-radius: 40px;
+        padding-left: 40px;
+        width: 70%;
+        font-size: 17px;
+        color: grey;
+        border: none;
+      }
+      img{
+        height: 50px;
+      }      
+    }
+    .socl{
+      img{
+        height: 40px;
+        margin: 20px 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .Links{
+    height: 350px;
+    width: 30%;
+    /* background-color: red; */
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    div{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      a{
+        text-decoration: none;
+        font-size: 17px;
+        color: rgb(120, 194, 219);
+        margin: 5px 5px;
+      }
+    }
+    .avail{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 50px;
+      h1{
+        color: rgb(241, 199, 107);
+        font-size: 17px;
+      }
+      h3{
+        color: rgb(120, 194, 219);
+        font-size: 15px;
+      }
+    }
+  }
+  .social{
+    height: 350px;
+    width: 30%;
+    /* background-color: red; */
+    margin: 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    img{
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      
+    }
+    div{
+      display: flex;
+      h1{
+        color: white;
+        font-size: 75px;
+      }
+      h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 5px;
+        margin-top: 30px;
+        color: white;
+        font-size: 40px;
+      }
+    }
+  }
+  .creator{
+    h3{
+      font-size: 12px;
+      color: white;
+    }
+  }
+}
+
+@media (max-width:900px) {
+  .pos-d{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 11px;
+    
+    height: 250px;
+    width: 155px;
+    overflow: hidden;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 8px 1px black;
+    img{
+      border-radius: 20px;
+      height: 100px;
+      width: 80px;
+      margin: 20px 20px;
+      object-fit: contain;
+    }
+    .data-catlog-imge{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgb(225, 221, 221);
+        flex-wrap: nowrap;
+        cursor: pointer;
+        box-shadow: -5px 5px 10px 2px rgb(77, 58, 58);
+        
+        h3{
+          font-size: 10px;
+          margin-left: 10px;
+          margin-top: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+          font-size: 20px;
+          margin: 20px 30px;
+          color: rgb(94, 19, 19);
+        }
+    }
+  }
+  .navbar{
+    height: 80px;
+    background-color: white;
+    /* padding-top: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    div{
+      padding-top: 15px;
+      a{
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: rgb(31, 30, 30);
+        margin-left: 30px;
+        padding-top: 10px;
+      }
+    }
+    
+    h1{
+      margin-top: 15px;
+      margin-left: 15%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      &:hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    h2{
+      margin-top: 15px;
+      margin-left: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      font-weight: 400;
+      &:hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    #Search{
+      height: 20px;
+      width: 20px;
+      margin-top: 20px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+    #cart{
+      height: 30px;
+      width: 30px;
+      margin-top: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    .poster-img{
+      height: 400px;
+      width: 900px;
+      background-image: url(poster.jpeg);
+      background-size: cover;
+      margin-left: 0px;
+      margin-top: 20px;
+      margin-right: 50px;
+      border: 1px solid black;
+      animation: change 40s linear infinite;
+      position: absolute;
+      .search{
+        margin-left: 400px;
+        overflow: hidden;
+        height: 0px;
+        width: 0px;
+        border-radius: 40%;
+      }
+      .search.active{
+        border-radius: 0%;
+        margin: 20px 20px;
+        position: fixed;
+        height: 350px;
+        width: 89%;
+        transition: 1s;
+        margin-left: 0px;
+        margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.422);
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+        input{
+          width: 500px;
+          height: 50px;
+          margin-left: 300px;
+          margin-top: 50px;
+          padding-left: 20px;
+          border-radius: 20px;
+          border: 1px solid black;
+        }
+      }
+      .carts{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+    
+      }
+      .carts.active{
+        position: fixed;
+        height: 500px;
+        width: 600px;
+        background-color: black;
+      }
+      .Gift{
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 10%;
+        color: rgb(11, 11, 109);
+        }
+        .enjoy{
+          font-size: 60px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+          color: rgb(20, 20, 100);
+        }
+        .but{
+          height: 50px;
+          width: 120px;
+          margin-left: 45%;
+          margin-top: 50px;
+          background: grey;
+          border-radius: 5px;
+          border: none;
+          color: white;
+          font-size: 17px;
+          cursor: pointer;
+        }
+    }
+  }
+  .brand-main{
+    margin-top: 500px;
+    .Brand-text{
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .brand-data{
+      height: auto;
+      width: 100%;
+      background-color: rgb(35, 44, 78);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .brand-s{
+    height: 70%;
+    width: 230px;
+    background-color: white;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 10px 2px rgb(137, 88, 119);
+    border-radius: 10px;
+    .brand-logo{
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      border: 1px solid black;
+      /* background-color: red; */
+      background-image: url(poster.jpeg);
+      background-size: cover;
+      margin-left: 20%;
+      margin-top: 15%;
+    }
+    .brand-des{
+      height: 150px;
+      h2{
+        margin-left: 10%;
+        margin-top: 10%;
+      }
+  
+    }
+  }
+  
+}
+@media (max-width:515px) {
+  .navbar{
+    height: 100px;
+    background-color: white;
+    /* padding-top: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    div{
+      padding-top: 15px;
+      a{
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: rgb(31, 30, 30);
+        margin-left: 50px;
+        padding-top: 10px;
+      }
+    }
+    
+    h1{
+      margin-top: 15px;
+      margin-left: 32%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      &:hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    h2{
+      margin-top: 15px;
+      margin-left: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      font-weight: 400;
+      &:hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    #Search{
+      height: 20px;
+      width: 20px;
+      margin-top: 20px;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+    #cart{
+      height: 30px;
+      width: 30px;
+      margin-top: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    .poster-img{
+      height: 230px;
+      width: 400px;
+      background-image: url(poster.jpeg);
+      background-size: cover;
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-right: 50px;
+      border: 1px solid black;
+      animation: change 40s linear infinite;
+      position: absolute;
+      .search{
+        margin-left: 400px;
+        overflow: hidden;
+        height: 0px;
+        width: 0px;
+        border-radius: 40%;
+      }
+      .search.active{
+        border-radius: 0%;
+        margin: 20px 20px;
+        position: fixed;
+        height: 350px;
+        width: 89%;
+        transition: 1s;
+        margin-left: 0px;
+        margin-left: 10px;
+        background-color: rgba(255, 255, 255, 0.422);
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+        input{
+          width: 500px;
+          height: 50px;
+          margin-left: 300px;
+          margin-top: 50px;
+          padding-left: 20px;
+          border-radius: 20px;
+          border: 1px solid black;
+        }
+      }
+      .carts{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+    
+      }
+      .carts.active{
+        position: fixed;
+        height: 500px;
+        width: 600px;
+        background-color: black;
+      }
+      .Gift{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 10%;
+        color: rgb(11, 11, 109);
+        }
+        .enjoy{
+          font-size: 25px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+          color: rgb(20, 20, 100);
+        }
+        .but{
+          height: 30px;
+          width: 70px;
+          margin-left: 40%;
+          margin-top: 20px;
+          background: grey;
+          border-radius: 5px;
+          border: none;
+          color: white;
+          font-size: 10px;
+          cursor: pointer;
+        }
+    }
+  }
+  .brand-main{
+    margin-top: 300px;
+    .Brand-text{
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .brand-data{
+      height: auto;
+      width: 100%;
+      background-color: rgb(35, 44, 78);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .brand-s{
+    height: 50%;
+    width: 200px;
+    background-color: white;
+    margin: 20px 20px;
+    box-shadow: 3px 5px 10px 2px rgb(137, 88, 119);
+    border-radius: 10px;
+    .brand-logo{
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      border: 1px solid black;
+      /* background-color: red; */
+      background-image: url(poster.jpeg);
+      background-size: cover;
+      margin-left: 20%;
+      margin-top: 15%;
+    }
+    .brand-des{
+      height: 150px;
+      h2{
+        margin-left: 10%;
+        margin-top: 10%;
+      }
+  
+    }
+  }
+  .rotate-divs{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    position: relative;
+    background-color: rgba(58, 79, 123, 0.854);
+    filter: drop-shadow(7px 5px 7px solid white);
+  
+  }
+  .parts-brand{
+    height: 200px;
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    background-color: rgba(153, 175, 179, 0.477);
+    margin: 20px 20px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px 2px rgb(37, 36, 36);
+    h1{
+      text-align: center;
+      font-size: 20px;
+      margin-left: 50px;
+      /* align-items: center; */
+      margin-top: 8vh;
+    }
+  }
 }

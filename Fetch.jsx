@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 const Fetch = () => {
-  let ch = document.querySelector('.buy')
-  const change = () => {
-    ch.classList.toggle("active");
-  };
+
   const [photos, setPhotos] = useState([]);
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
@@ -31,7 +28,7 @@ const Fetch = () => {
               <h2>Price:</h2>
               <h2>{photo.price}</h2>
               <h3>$</h3>
-              <button onClick ={change} className='buy'>buy</button>
+              <button className='buy'>buy</button>
             </div>
             <div className="progress-div">
               <h1>Rating's:</h1>
