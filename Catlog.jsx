@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
+
 function Catlog() {
     const [photos, setPhotos] = useState([]);
     useEffect(() => {
@@ -20,6 +21,7 @@ function Catlog() {
     <div className="catlog-data">
         {photos.map((photo) => (
         <div className="pos-d">
+          
             <img src={photo.image}  alt="" />
             <div className="data-catlog-imge">
                 <h3>{photo.title}</h3>

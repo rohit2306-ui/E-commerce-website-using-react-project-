@@ -5,9 +5,12 @@
 }
 .navbar{
   height: 50px;
-  background-color: white;
+  background-color: rgba(119, 152, 231, 0.767);
   /* padding-top: 10px; */
   display: flex;
+  position: sticky;
+  color: white;
+  padding-bottom: 20px;
   div{
     padding-top: 15px;
     a{
@@ -15,7 +18,7 @@
       font-weight: 400;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-decoration: none;
-      color: rgb(31, 30, 30);
+      color: white;
       margin-left: 30px;
       padding-top: 10px;
     }
@@ -53,6 +56,7 @@
     margin-top: 10px;
     margin-left: 20px;
     cursor: pointer;
+    border-radius: 50%;
   }
   
 }
@@ -81,7 +85,7 @@
       border-radius: 0%;
       margin: 20px 20px;
       position: fixed;
-      height: 350px;
+      height: 80%;
       width: 89%;
       transition: 1s;
       margin-left: 0px;
@@ -139,7 +143,7 @@
       }
   }
 }
-@keyframes change{
+/* @keyframes change{
   20%{
     background-image: url(sale.jpg);
   }
@@ -152,7 +156,7 @@
   95%{
     background-image: url(newstyle.jpg);
   }
-  }
+  } */
   .main{
     display: flex;
     position: static;
@@ -526,8 +530,203 @@
     }
   }
 }
+.cart-this{
+  height: 0px;
+  width: 0px;
+  position: fixed;
+  overflow: hidden;
+}
+.cart-this.active{
+  transition: 0.6s;
+  height: 80%;
+  width: 800px;
+  position: fixed;
+  overflow-y: scroll;
+  background: linear-gradient(60deg,black , rgb(9, 24, 59));
+  h1{
+    color: cyan;
+    /* text-align: center; */
+    margin: 20px 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.about-nav{
+  height: auto;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  background: linear-gradient(45deg,rgb(121, 145, 121) , rgb(55, 55, 124));
+  
+}
+.joinform{
+  height: auto;
+  width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  flex-wrap: wrap;
+  background-color: rgba(184, 110, 214, 0.174);
+  border: none;
+  h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .one{
+    display: flex;
+    position: static;
+    input{
+      height: 40px;
+      width: 40%;
+      margin-top: 20px;
+      margin-left: 20px;
+      padding-left: 10px;
+      border-radius: 10px;
+      border: 1px solid black;
+    }
+  }
+  input{
+    height: 40px;
+    width:88%;
+    margin-top: 30px; 
+    padding-left: 10px; 
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  .two{
+    display: flex;
+    position: static;
+    select{
+      width: 200px;
+      height: 20px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  }
+  button{
+    background-color: rgb(39, 169, 220);
+    color: white;
+    margin: 20px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 33px;
+    width: 83px;
+    cursor: pointer;
+
+  }
+  .verify{
+    display: flex;
+    position: static;
+
+    #OTP{
+      width: 100px;
+      /* background-color: rgb(39, 97, 220); */
+    }
+    #verify{
+      height: 40px;
+      margin-top: 30px;
+      border-radius: 10px;
+      background-color: rgb(39, 169, 220);
+      
+    }
+  }
+  #submit{
+    height: 40px;
+    width: 150px;
+    margin-left: 28%;
+    background-color: rgb(39, 97, 220);
+  }
+  h4{
+    text-align: center;
+    font-weight: 400;
+  }
+  .cacout{
+    /* text-decoration: none; */
+    color: black;
+    align-items: center;
+    display: flex;
+    margin-left: 37%;
+    margin-top: 20px; 
+    
+  }
+  padding-bottom: 50px;
+}
+.about_story{
+  height: auto;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  background: linear-gradient(60deg,rgba(162, 84, 97, 0.434) , rgba(0, 0, 255, 0.196));
+  filter: drop-shadow(0px 10px 6px black);
+  h3{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 30px;
+    font-size: 30px;
+    color: rgb(171, 157, 111);
+  }
+  h4{
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(231, 229, 229);
+  }
+  .image-area{
+    height: 300px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      height: 300px;
+      margin-bottom: 50px;
+    }
+  }
+  .think{
+    margin-top: 40px;
+    color: rgba(0, 0, 0, 0.612);
+  }
+  .image1{
+    height: 250px;
+    width: 90%;
+    /* background-color: red; */
+    margin: 20px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      height: 250px;
+      margin-left: 50px;
+      size: 100%;
+    }
+  }
+  .image-data{
+
+    h3{
+      color: rgb(143, 140, 100);
+    }
+  }
+}
 
 @media (max-width:900px) {
+  .about-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
   .pos-d{
     display: flex;
     flex-direction: column;
@@ -640,7 +839,7 @@
       animation: change 40s linear infinite;
       position: absolute;
       .search{
-        margin-left: 400px;
+        margin-left: 100px;
         overflow: hidden;
         height: 0px;
         width: 0px;
@@ -660,9 +859,9 @@
         border-radius: 10px;
         transition: 0.5s;
         input{
-          width: 500px;
+          width: 300px;
           height: 50px;
-          margin-left: 300px;
+          margin-left: 240px;
           margin-top: 50px;
           padding-left: 20px;
           border-radius: 20px;
@@ -833,20 +1032,20 @@
         border-radius: 0%;
         margin: 20px 20px;
         position: fixed;
-        height: 350px;
-        width: 89%;
+        height: 150px;
+        width: 80%;
         transition: 1s;
         margin-left: 0px;
-        margin-left: 10px;
+        margin-left: 5px;
         background-color: rgba(255, 255, 255, 0.422);
         border: 1px solid black;
         border-radius: 10px;
         transition: 0.5s;
         input{
-          width: 500px;
-          height: 50px;
-          margin-left: 300px;
-          margin-top: 50px;
+          width: 200px;
+          height: 40px;
+          margin-left: 90px;
+          margin-top: 10px;
           padding-left: 20px;
           border-radius: 20px;
           border: 1px solid black;

@@ -28,7 +28,7 @@ const Fetch = () => {
               <h2>Price:</h2>
               <h2>{photo.price}</h2>
               <h3>$</h3>
-              <button className='buy'>buy</button>
+              <button className='buy'>See this</button>
             </div>
             <div className="progress-div">
               <h1>Rating's:</h1>

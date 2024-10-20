@@ -12,6 +12,9 @@ export class Poster extends Component {
           <div className="search">
             <input type="text" placeholder="Seacrh" name="" id="" />
           </div>
+          <div className="cart-this">
+            <h1>cart</h1>
+          </div>
           <div className="search-text"></div>
           <h1 className="Gift">GIFT'S GUIDE</h1>
           <h1 className="enjoy">Enjoy the Trend</h1>
